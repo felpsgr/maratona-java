@@ -1,4 +1,4 @@
-package academy.devdojointroducao;
+package academy.devdojo.maratonajava.devdojointroducao;
 
 public class ExercicioSalario {
     public static void main(String[] args) {

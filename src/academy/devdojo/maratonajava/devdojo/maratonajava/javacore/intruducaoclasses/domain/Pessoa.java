@@ -1,4 +1,4 @@
-package academy.devdojo.maratonajava.javacore.intruducaoclasses.domain;
+package academy.devdojo.maratonajava.devdojo.maratonajava.javacore.intruducaoclasses.domain;
 
 public class Pessoa {
     public String nome;
