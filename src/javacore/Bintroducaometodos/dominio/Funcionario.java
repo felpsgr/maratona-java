@@ -1,9 +1,10 @@
 package javacore.Bintroducaometodos.dominio;
 
 public class Funcionario {
-    public String nome;
-    public int idade;
-    public double[] salario;
+    private String nome;
+    private int idade;
+    private double[] salario;
+    private double media;
 
     public void impressora() {
         System.out.println(this.nome);
@@ -28,5 +29,33 @@ public class Funcionario {
         }
         double media = soma / salario.length;
         System.out.println("\nMédia salário: " + media);
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public void setSalario(double[] salario) {
+        this.salario = salario;
+    }
+
+    public void setIdade(int idade) {
+        this.idade = idade;
+    }
+
+    public double getMedia() {
+        return media;
+    }
+
+    public double[] getSalario() {
+        return salario;
+    }
+
+    public int getIdade() {
+        return idade;
+    }
+
+    public String getNome() {
+        return nome;
     }
 }
