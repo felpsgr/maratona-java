@@ -1,6 +1,6 @@
 package javacore.Minterfaces.domain;
 
-public interface DataLoader {
+public interface  DataLoader {
     void load();
 
     static final int MAX_DATA_SIZE = 10;

@@ -14,8 +14,8 @@ public class RunTimeExceptionTest02 {
      */
     private static int divisao(int a, int b) throws RuntimeException{
         if (b == 0) {
-            throw new RuntimeException("Argumento ilegeal, não pode ser zero");
-//            throw new IllegalAccessException("Argumento ilegeal, não pode ser zero");
+            throw new RuntimeException("Argumento ilegal, não pode ser zero");
+//            throw new IllegalAccessException("Argumento ilegal, não pode ser zero");
         }
         return a/b;
     }
