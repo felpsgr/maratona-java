@@ -6,10 +6,18 @@ import java.util.regex.Pattern;
 public class PatternMatcherTest02 {
     static void main(String[] args) {
         // \d = todos os dígitos
+        // \D = tudo que não for digito(numero)
+        // \s = espaço em branco /t /n /f /r
+        // \S = todos os caracteres brancos
+        // \S = todos os que não forem em brancos
+        // \w = a-z,A-Z, digitos, _
+        // \W = tudo que nao for a-z,A-Z, digitos, _
+        // []
 
-        String regex = "\\d";
+
+        String regex = "0[xX][0-9a-fA-F]";
 //        String txt = "abaaba";
-        String txt2 = "tedfdsf31df11f3";
+        String txt2 = "12 0x 0X 0x212 0x 2FFFABC 0x1 0xg";
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(txt2);
 
@@ -21,6 +29,7 @@ public class PatternMatcherTest02 {
         while (matcher.find()) {
             System.out.print(matcher.start() + " "+matcher.group()+"\n");
         }
-
+        int numeroHex = 0xDCEFA;
+        System.out.println(numeroHex);
     }
 }
